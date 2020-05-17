@@ -77,11 +77,11 @@ def command(text):
         command = 'yes bose, ke lantai enam'
         GPIO.output(enam, True)
         turnOff()
-    elif 'pintu' in text:
+    elif 'buka' in text:
         command = 'yes bose, tutup pintu'
         GPIO.output(tutup, True)
         turnOff()
-    elif 'pintu' in text:
+    elif 'tutup' in text:
         command = 'yes bose, buka pintu'
         GPIO.output(buka, True)
         turnOff()
