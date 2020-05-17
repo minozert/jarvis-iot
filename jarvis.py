@@ -53,39 +53,39 @@ def speak(command):
     os.system("mpg321 jarvis.mp3")
 
 def command(text):
-    if 'lantai satu ' in text:
+    if 'satu ' in text:
         command = 'oke, ke lantai satu'
         GPIO.output(satu, True)
         turnOff()
-    elif 'lantai dua' in text:
+    elif 'dua' in text:
         command = 'yes bose, ke lantai dua'
         GPIO.output(dua, True)
         turnOff()
-    elif 'lantai tiga' in text:
+    elif 'tiga' in text:
         command = 'yes bose, ke lantai tiga'
         GPIO.output(tiga, True)
         turnOff()
-    elif 'lantai empat' in text:
+    elif 'empat' in text:
         command = 'yes bose, ke lantai empat'
         GPIO.output(empat, True)
         turnOff()
-    elif 'lantai lima' in text:
+    elif 'lima' in text:
         command = 'yes bose, ke lantai lima'
         GPIO.output(lima, True)
         turnOff()
-    elif 'lantai enam' in text:
+    elif 'enam' in text:
         command = 'yes bose, ke lantai enam'
         GPIO.output(enam, True)
         turnOff()
-    elif 'tutup pintu' in text:
+    elif 'pintu' in text:
         command = 'yes bose, tutup pintu'
         GPIO.output(tutup, True)
         turnOff()
-    elif 'buka pintu' in text:
+    elif 'pintu' in text:
         command = 'yes bose, buka pintu'
         GPIO.output(buka, True)
         turnOff()
-    elif 'thank you jarvis' in text:
+    elif 'jarvis' in text:
         command = "you are welcome, sir"
     elif 'bye jarvis' in text:
         command = 'yes sir, Please call me again next time. bye'
